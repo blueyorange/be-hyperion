@@ -1,10 +1,10 @@
 module.exports = [
-  {
-    username: "russ",
-    password: "chugs",
-  },
-  {
-    username: "bob",
-    password: "bob",
-  },
+  // {
+  //   username: "bert",
+  //   password: "Chugs!@£",
+  // },
+  // {
+  //   username: "billybob",
+  //   password: "Chugs!@£",
+  // },
 ];

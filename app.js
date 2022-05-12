@@ -25,7 +25,8 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/", home);
 app.use("/auth", authRouter);
-app.use(auth);
+// all endpoints under /api are secured using the auth function
+//app.use(auth);
 app.use("/api", apiRouter);
 app.all("*", handleInvalidUrlErrors);
 app.use(handleCustomErrors);

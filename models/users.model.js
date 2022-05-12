@@ -12,9 +12,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    match: usernameRegEx,
+    // match: usernameRegEx,
   },
-  password: { type: String, required: true, match: passwordRegEx },
+  password: { type: String, required: true },
+  // password: { type: String, required: true, match: passwordRegEx },
 });
 
 UserSchema.pre("save", async function (next) {
